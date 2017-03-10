@@ -1,0 +1,8 @@
+# @install: lix download https://github.com/haxetink/tink_web/archive/389d7fff85033c1aaad3afe49da2da49a25d1db8.tar.gz as tink_web#0.0.0-alpha.0/389d7fff85033c1aaad3afe49da2da49a25d1db8
+-D tink_web=0.0.0-alpha.0
+-cp ${HAXESHIM_LIBCACHE}/tink_web/0.0.0-alpha.0/389d7fff85033c1aaad3afe49da2da49a25d1db8/src
+
+-lib tink_template
+-lib tink_macro
+-lib tink_http
+-lib tink_json
