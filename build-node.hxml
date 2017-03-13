@@ -1,7 +1,7 @@
 -lib hxnodejs
-# -lib tink_http
+-lib tink_http
 -lib tink_json
--lib tink_web
+# -lib tink_web
 
 -cp src
 -main Main
