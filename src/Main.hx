@@ -5,7 +5,7 @@ import tink.http.Response;
 
 using tink.CoreApi;
 
-import adyen.Data;
+using adyen.NotificationApi;
 
 class Main {
 	public static function main() {
@@ -35,7 +35,7 @@ class Main {
 					case Success(body): {
 						trace('---success---');
 						// trace(body.toString());
-						var adr: adyen.Response = tink.Json.parse(body.toString());
+						var adr: Notification = new Parser(body.toString()).parse();
 						trace(adr);
 						trace('---/success---');
 					}
