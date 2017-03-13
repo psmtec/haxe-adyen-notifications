@@ -3,9 +3,8 @@ import tink.http.Handler;
 import tink.http.Request;
 import tink.http.Response;
 
-using tink.CoreApi;
-
 using adyen.NotificationApi;
+using tink.CoreApi;
 
 class Main {
 	public static function main() {
@@ -33,16 +32,21 @@ class Main {
 			case Plain(src):
 				src.all().map(function( o ) return switch o {
 					case Success(body): {
-						trace('---success---');
-						// trace(body.toString());
-						var adr: Notification = new Parser(body.toString()).parse();
-						trace(adr);
-						trace('---/success---');
+						trace('---plain/success---');
+						try {
+							var adr: Notification = new Parser(body.toString()).parse();
+							trace(adr);
+						} catch (x: Dynamic) {
+							trace('---oh noes: json parser error---');
+							trace(x);
+							trace('---/oh noes---');
+						}
+						trace('---/plain/success---');
 					}
 					case Failure(e):
-						trace('---failure---');
+						trace('---plain/failure---');
 						trace(e);
-						trace('---/failure---');
+						trace('---/plain/failure---');
 				});
 				// trace('plain');
 				// trace(src);
@@ -51,6 +55,6 @@ class Main {
 				//trace(parts);
 		}
 		
-		return Future.sync(OutgoingResponse.blob(haxe.io.Bytes.ofString('{"notificationResponse":"[accepted]"}'), 'application/json'));
+		return Future.sync(OutgoingResponse.blob(haxe.io.Bytes.ofString(AcceptResponse.body), 'application/json'));
 	}
 }

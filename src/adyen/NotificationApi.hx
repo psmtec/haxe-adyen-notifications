@@ -1,5 +1,6 @@
 package adyen;
 
+typedef AcceptResponse = adyen.notification.AcceptResponse;
 typedef AdditionalData = adyen.notification.AdditionalData;
 typedef Amount = adyen.notification.Amount;
 typedef Error = adyen.notification.Error;
