@@ -1,0 +1,7 @@
+{
+	"name": "haxe-adyen-notifications",
+	"license": "MIT",
+	"classPath": "src",
+	"contributors": ["sh-dave"],
+	"url": "https://github.com/sh-dave/haxe-adyen-notifications"
+}
