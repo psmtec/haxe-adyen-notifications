@@ -6,7 +6,7 @@
   "repository": "",
   "author": "David Klein david.klein@psmtec.de",
   "scripts": {
-    "start": "nodemon -e hx --exec \"haxe build-node.hxml\""
+    "start": "nodemon -e hx,hxml --exec \"haxe build-node.hxml\""
   },
   "devDependencies": {
     "haxeshim": "^0.5.6",
