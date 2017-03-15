@@ -1,6 +1,6 @@
 package adyen.notification;
 
-import adyen.notification.Tools;
+import adyen.notification.Types;
 
 // TODO (DK) i'd like a proper typedef better here, but for now this is how tink_json can parse it
 enum RequestItem {

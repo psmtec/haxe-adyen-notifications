@@ -1,5 +1,6 @@
 deps.hxml
 
+-cp test
 -main Main
 
 -js bin/index.js

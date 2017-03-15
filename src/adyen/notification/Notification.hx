@@ -1,6 +1,6 @@
 package adyen.notification;
 
-import adyen.notification.Tools;
+import adyen.notification.Types;
 
 typedef Notification = {
 	live: AdyenBool,
