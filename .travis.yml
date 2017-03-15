@@ -1,0 +1,13 @@
+sudo: false
+language: haxe
+os:
+  - linux
+  - osx
+haxe:
+  - "3.4"
+  - development
+install:
+  - haxelib install travix
+  - haxelib run travix install
+script:
+  - haxelib run travix node

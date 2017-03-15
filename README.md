@@ -1,8 +1,2 @@
-# haxe-adyen-notifications
-## setup
-- uses [lix.pm](https://github.com/lix-pm) and npm instead of haxelib to handle dependencies
+# haxe-adyen-notifications [![Build Status](https://travis-ci.org/sh-dave/haxe-adyen-notifications.svg?branch=master)](https://travis-ci.org/sh-dave/haxe-adyen-notifications) 
 
-```sh
-npm install
-lix download
-```
