@@ -1,4 +1,5 @@
 deps.hxml
 
+-lib tink_json
 -cp test
 -main Main
