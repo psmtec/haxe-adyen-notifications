@@ -8,14 +8,14 @@ enum RequestItem {
 		?additionalData: AdditionalData,
 		amount: Amount,
 		eventCode: EventCode,
-		eventDate: String, // YYYY-MM-DDTHH:mm:ss.sssZ
-		merchantAccountCode: String,
-		merchantReference: String,
+		eventDate: EventDate, // YYYY-MM-DDTHH:mm:ss.sssZ
+		merchantAccountCode: MerchantAccountCode,
+		merchantReference: MerchantReference,
 		?operations: Array<Operation>, // (DK) only in authorisation notifications
-		?originalReference: String,
-		?paymentMethod: String,  // (DK) only in authorisation notifications
-		pspReference: String,
-		?reason: String,
+		?originalReference: OriginalReference,
+		?paymentMethod: PaymentMethod,  // (DK) only in authorisation notifications
+		pspReference: PSPReference,
+		?reason: Reason,
 		success: AdyenBool
 	);
 }
