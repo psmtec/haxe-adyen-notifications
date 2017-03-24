@@ -3,7 +3,7 @@ package adyen;
 typedef AcceptResponse = adyen.notification.AcceptResponse;
 typedef AdditionalData = adyen.notification.AdditionalData;
 typedef Amount = adyen.notification.Amount;
-typedef Currency = adyen.notification.Currency;
+typedef CurrencyCode = adyen.notification.Types.CurrencyCode;
 typedef Error = adyen.notification.Error;
 typedef EventCode = adyen.notification.EventCode;
 typedef Notification = adyen.notification.Notification;

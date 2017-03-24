@@ -1,6 +1,8 @@
 package adyen.notification;
 
+import adyen.notification.Types;
+
 typedef Amount = {
-	currency: Currency, // https://en.wikipedia.org/wiki/ISO_4217
+	currency: CurrencyCode,
 	value: Int,
 }

@@ -5,6 +5,7 @@
 	"contributors": ["sh-dave"],
 	"url": "https://github.com/sh-dave/haxe-adyen-notifications",
 	"dependencies": {
-		"tink_json":""
+		"tink_json":"",
+		"haxe-iso4217":""
 	}
 }

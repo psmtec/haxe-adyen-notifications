@@ -21,6 +21,8 @@ abstract AdyenBool(Bool) to Bool {
 		return new AdyenBool(Tools.parseBool(rep.get()));
 }
 
+typedef CurrencyCode = iso4217.CurrencyCode;
+
 private class Tools {
 	public static inline function parseBool( s: String ) : Bool
 		return s.toLowerCase() == "true";
